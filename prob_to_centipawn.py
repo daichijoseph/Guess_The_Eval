@@ -5,3 +5,5 @@ def prob_to_centipawns(w):
 
 def centipawn_to_prob(cp):
     return (50 + 50*(2/(1 + exp(-0.00368208*cp)) - 1))/100
+
+
