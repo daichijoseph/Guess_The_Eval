@@ -7,14 +7,13 @@ from config import API_TOKEN
 # Establishes session, creates berserk client object which makes authenticated requests on Lichess and handles API responses
 def create_client():
     session = berserk.TokenSession(API_TOKEN)
-    return berserk.client(session=session)
+    return berserk.Client(session=session)
     
 def get_games(
         client,
         from_rating=1300,
         to_rating=1400,
         player='daichijoseph41664',
-        rated=True,
         time_control='rapid',
         num_games=50
 ):
