@@ -14,13 +14,13 @@ def get_games(
         from_rating=1300,
         to_rating=1400,
         player='daichijoseph41664',
-        time_control='rapid',
+        time_control='blitz',
         num_games=50
 ):
     """Fetch games by player from the last month"""
 
     end = datetime.now()
-    start = end - relativedelta(months=1)
+    start = end - relativedelta(months=2)
     games = client.games.export_by_player(
         username=player,
         since=berserk.utils.to_millis(start),
