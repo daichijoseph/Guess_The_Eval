@@ -1,4 +1,18 @@
+# Environment Variables
 .env
+*.env
+
+# Python
 __pycache__/
 *.pyc
 .venv/
+
+# Data Files
+LichessDataDumps/
+
+# Colab / Jupyter
+.ipynb_checkpoints/
+
+# IDE Settings
+.vscode/
+.idea/
